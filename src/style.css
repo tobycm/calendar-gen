@@ -1,0 +1,74 @@
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+thead > tr {
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+
+th {
+  width: 12vw;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2vw;
+  font-weight: 400;
+}
+
+th::first-letter {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+tbody > tr {
+  border-bottom: 1px solid #000;
+}
+
+td {
+  width: 10.5vw;
+  height: 10.5vw;
+  padding: 0.75vw;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.5vw;
+
+  vertical-align: top;
+  text-align: end;
+}
+
+table {
+  margin-bottom: 15vh;
+}
+
+tbody > tr > td > textarea {
+  width: 62%;
+  height: 80%;
+
+  border: none;
+
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25vw;
+
+  vertical-align: top;
+  text-align: start;
+  resize: none;
+}
+
+tbody > tr > td > textarea:focus {
+  outline: none;
+}
+
+td:has(.selected) > * {
+  color: #f00;
+}
+
+.weekend {
+  color: #f00;
+}
