@@ -33,7 +33,7 @@ const monthNames = [
 ] as const;
 const monthLengths = leapYear ? [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] : [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
-const months = [];
+const months: Day[][] = [];
 
 for (let i = 0; i < 12; i++) {
   const month = [];
@@ -45,7 +45,7 @@ for (let i = 0; i < 12; i++) {
   firstWeekday = (firstWeekday + monthLengths[i]) % 7;
 }
 
-console.log(months);
+// console.log(months);
 
 months.forEach((month, i) => {
   const table = document.createElement("table");
